@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import FacebookLogo from "../assets/FacebookLogo.svg";
-import InstagramLogo from "../assets/InstagramLogo.svg";
-import LinkedinLogo from "../assets/LinkedinLogo.svg";
+import FacebookLogo from "../assets/facebookLogo.svg";
+import InstagramLogo from "../assets/instagramLogo.svg";
+import LinkedinLogo from "../assets/linkedinLogo.svg";
 
 export default function Footer() {
     const [page, setPage] = useState(window.location.pathname);
@@ -85,9 +85,6 @@ export default function Footer() {
 
 const Content = styled.div`
     font-family: 'Nunito', sans-serif;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     height: 158px;
     width: 100%;
     display: flex;

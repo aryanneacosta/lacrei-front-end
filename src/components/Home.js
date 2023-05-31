@@ -55,6 +55,7 @@ const Title = styled.div`
 const Text = styled.div`
     margin-top: 32px;
     font-size: 24px;
+    font-weight: 400;
     color: var(--grey-text);
     line-height: 33px;
 `;
@@ -112,5 +113,4 @@ const Img = styled.div`
         width: 555px;
 
     }
-    
 `;

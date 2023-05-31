@@ -56,6 +56,6 @@ const Img = styled.div`
     margin-bottom: 16px;
 
     img {
-        width: 555px;
+        width: 540px;
     }
 `;

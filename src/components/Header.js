@@ -58,7 +58,7 @@ export default function Header() {
                             </Page>
                         }
                     </Link>
-                    
+
                 </Pages>
 
             </Content>
@@ -77,6 +77,17 @@ const Content = styled.div`
     justify-content: space-between;
     align-items: center;
     
+    @media (max-width: 1040px) {
+        padding-left: 32px;
+        padding-right: 32px; 
+    }
+
+    @media (max-width: 520px) {
+        height: 78px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 `;
 
 const Title = styled.div`
@@ -106,5 +117,10 @@ const Page = styled.div`
 
     :hover {
         opacity: 60%;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 14px;
+        margin-left: 19px;
     }
 `;

@@ -15,7 +15,7 @@ export default function Footer() {
     return (
         <>
             <Content>
-                
+
                 <Border></Border>
 
                 <Pages>
@@ -93,17 +93,41 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 64px;
+
+    @media (max-width: 1040px) {
+        margin-left: 32px;
+    }
+
+    @media (max-width: 520px) {
+        height: 159px;
+        margin-left: 16px;
+    }
 `;
 
 const Border = styled.div`
     margin-right: 128px;
     border-top: 1px solid;
     border-color: var(--light-green);
+
+    @media (max-width: 1040px) {
+        margin-right: 64px;
+    }
+
+    @media (max-width: 520px) {
+        margin-right: 32px;
+    }
 `;
 
 const Pages = styled.div`
     display: flex;
     margin-top: 32px;
+
+    @media (max-width: 520px) {
+        height: 65px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
 `;
 
 const Page = styled.div`
@@ -113,6 +137,10 @@ const Page = styled.div`
 
     h3 {
         font-weight: ${props => props.istrue ? '700' : '400'};
+    }
+
+    @media (max-width: 520px) {
+        font-size: 14px;
     }
 `;
 
@@ -125,6 +153,14 @@ const Links = styled.div`
         width: 32px;
         margin-right: 40px;
     }
+
+    @media (max-width: 520px) {
+        margin-top: 12px;
+
+        img {
+            margin-right: 30px;
+        }
+    }
 `;
 
 const Text = styled.div`
@@ -132,4 +168,8 @@ const Text = styled.div`
     color: var(--grey-text);
     font-size: 12px;
     font-weight: 400;
+
+    @media (max-width: 520px) {
+        margin-top: 12px;
+    }
 `;
